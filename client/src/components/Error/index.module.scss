@@ -1,0 +1,16 @@
+.alert {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px;
+
+    border-radius: 8px;
+
+    color: #FFDBDE;
+    background: rgba(255, 75, 75, .5);
+
+    h3 {
+        display: inline;
+    }
+}

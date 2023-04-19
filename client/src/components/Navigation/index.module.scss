@@ -1,0 +1,30 @@
+@use "/src/includes/colors" as colors;
+@use "/src/includes/bp" as bp;
+@use "/src/includes/default" as default;
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+
+        text-decoration: none;
+        padding: 8px;
+
+        span {
+            color: #353535;
+            font-size: 24px;
+        }
+
+        img {
+            width: 32px;
+            height: 32px;
+        }
+    }
+}

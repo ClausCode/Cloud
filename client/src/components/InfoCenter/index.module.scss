@@ -1,0 +1,55 @@
+.info_box {
+    position: fixed;
+    top: 8px;
+    bottom: 8px;
+    right: 0;
+    overflow-y: auto;
+
+    padding-right: 8px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    z-index: 10;
+
+    .popup {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+
+        width: 400px;
+
+        color: #fff;
+        opacity: .75;
+
+        padding: 8px;
+
+        border-radius: 8px;
+        border: 1px solid rgba(0,0,0,.1);
+
+        &.error {
+            background: #FF4B4B;
+        }
+
+        &.warning {
+            background: #FFCD4B;
+        }
+
+        &.info {
+            background: #1C98CD;
+        }
+
+        img {
+            width: 16px;
+
+            cursor: pointer;
+        }
+
+        &:hover {
+            opacity: 1;
+
+            text-shadow: #000000 0 0 2px;
+        }
+    }
+}

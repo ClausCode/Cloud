@@ -1,0 +1,25 @@
+@use 'src/includes/colors';
+@use 'src/includes/bp';
+@use 'src/includes/default';
+
+.container {
+    display: flex;
+    gap: 16px;
+
+    padding: 16px;
+
+    .sidebar {
+        flex: 1;
+
+        display: flex;
+        height: calc(100vh - 32px);
+
+        @include default.box;
+    }
+
+    .content {
+        flex: 4;
+
+        @include default.box;
+    }
+}
